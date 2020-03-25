@@ -1,29 +1,35 @@
-
 import React from 'react';
-import './Contact.css';
+import './Contact.css'
+
 
 function Contact() {
   return (
-    <div className="Contact">
-        <img className="avatar"
-        src="https://randomuser.me/api/portraits/men/20.jpg"
-        alt="Jake Love picture"
-        />
-        <div className ="UserData">
-            <h4>Jake Love</h4>
-       
-            <div classeName="status">
-                <div className="status-online">
-                </div>
-                <div className="text">
-                    <p>Online</p>
-                </div>
+
+<div className="Contact">
+    <div className="avatar"> 
+    <img src="https://randomuser.me/api/portraits/men/6.jpg" alt="David Picture" />
+       </div>
+    <div className="container">
+        <div className="name">
+            <h2>David Beckham</h2>
+        </div>
+        <div className="status">
+            <div className="status-online"></div>
+            <div className="status-text">
+                <p>Online</p>
             </div>
-      
-        </div> 
+        </div>
     </div>
+</div>
 
   );
 }
 
 export default Contact;
+
+
+
+
+
+
+
