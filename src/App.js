@@ -10,7 +10,6 @@ function App() {
       online
       status
       />
-    <div className="App">
       <Contact 
       name = "Camile Mdr"
       avatar ="https://randomuser.me/api/portraits/women/34.jpg"
@@ -18,6 +17,9 @@ function App() {
      <Contact 
       name = "Marine Pozo"
       avatar ="https://randomuser.me/api/portraits/women/4.jpg"
+      online
+      status
+    
       />
     </div>
   );
