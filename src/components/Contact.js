@@ -1,22 +1,23 @@
 import React from 'react';
 import './Contact.css'
+import { checkPropTypes } from 'prop-types';
 
 
-function Contact() {
+function Contact(prop) {
   return (
 
 <div className="Contact">
     <div className="avatar"> 
-    <img src="https://randomuser.me/api/portraits/men/6.jpg" alt="David Picture" />
+    <img src={props.avatar} alt={props.name} />
        </div>
     <div className="container">
         <div className="name">
-            <h2>David Beckham</h2>
+            <h2>{props.name}</h2>
         </div>
         <div className="status">
-            <div className="status-online"></div>
+            <div className={props.status? "status-online" : "status-offline"}></div>
             <div className="status-text">
-                <p>Online</p>
+                <p>{props.online}</p>
             </div>
         </div>
     </div>
@@ -26,10 +27,4 @@ function Contact() {
 }
 
 export default Contact;
-
-
-
-
-
-
 
