@@ -1,26 +1,27 @@
 import React from "react";
 import Contact from "./components/Contact";
+import ContactList from "./components/ContactList";
 
 function App() {
   return (
     <div className="App">
-      <Contact 
-      name = "David Lolilol"
-      avatar ="https://randomuser.me/api/portraits/men/34.jpg"
-      online
-      status
+      <Contact
+        name="David Lol"
+        avatar="https://randomuser.me/api/portraits/men/3.jpg"
+        online
+        status
       />
-      <Contact 
-      name = "Camile Mdr"
-      avatar ="https://randomuser.me/api/portraits/women/34.jpg"
+      <Contact
+        name="Camille Lolilol"
+        avatar="https://randomuser.me/api/portraits/women/34.jpg"
       />
-     <Contact 
-      name = "Marine Pozo"
-      avatar ="https://randomuser.me/api/portraits/women/4.jpg"
-      online
-      status
-    
+      <Contact
+        name="Eliot Mdr"
+        avatar="https://randomuser.me/api/portraits/men/38.jpg"
+        online
+        status
       />
+      <ContactList />
     </div>
   );
 }
